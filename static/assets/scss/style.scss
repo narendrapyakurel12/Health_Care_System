@@ -1,0 +1,300 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+
+/* ===================================== Header CSS ================================== */
+.heade-row{
+	padding: 17px;
+	@media screen and (max-width: 767px) {
+		padding: 8px;
+	}
+	position: fixed;
+	width: 100%;
+	background-color: #FFF;
+	z-index: 999;
+	left: 0px;
+	margin: 0px;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05),inset 0 -1px 0 rgba(0,0,0,0.15);
+	.logo-col{
+		img{
+			max-width: 230px;
+		}
+	}
+	.nav-col{
+		.navbar{
+			padding: 0px;
+			background-color: #FFF !important;
+			.navbar-nav{
+				.nav-item{
+					padding: 8px 20px;
+					font-weight: 600;
+					.nav-link{
+
+					}
+					.active{
+						color: $color-primary;
+					}
+
+				}
+			}
+		}
+		.navbar-collapse{
+			flex-flow:row-reverse;
+		}
+	}
+
+}
+.navbar-toggler{
+	float: right;
+	border: 1px solid #CCC;
+	margin-top: 11px;
+}
+/* ===================================== Slider CSS ================================== */
+
+.slider{
+	padding-top: 86px;
+	.carousel-caption{
+		text-align: right;
+		bottom: 100px;
+		margin-left: -50px;
+		h5{
+			font-size: 5.5rem;
+			color: $color-primary;
+			max-width: 650px;
+			font-weight: 700;
+			float: right;
+			text-shadow: 3px 3px #fff;
+			@media screen and (max-width: 1150px) {
+				font-size: 3.5rem;
+			}
+		}
+		p{
+			font-size:1.5rem;
+			color: $color-primary;
+			max-width: 650px;
+			float: right;
+			font-weight: 600;
+			text-shadow: 3px 3px #fff;
+		}
+		span{
+			color: #444;
+		}
+	}
+	svg{
+		-webkit-transform:scaleY(-1);
+		margin-top: -70px;
+		@media screen and (max-width: 567px) {
+			display: none;
+		}
+	}
+}
+
+/* ===================================== About Us CSS ================================== */
+
+.about-us{
+	background-color: #FFF;
+	@include big-padding();
+	padding-top: 0px;
+	p{
+		margin-top: 10px;
+		line-height: 26px;
+	}
+	@media screen and (max-width: 767px) {
+		img{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.about-count{
+	.countcol{
+		text-align: center;
+		padding: 20px;
+		i{
+			font-size: 2.5rem;
+			color: $color-primary;
+		}
+		strong{
+
+		}
+	}
+}
+
+/* ===================================== Blog CSS ================================== */
+
+.servic-row{
+	padding: 15px;
+	padding-left: 15%;
+	@media screen and (max-width: 1199px) {
+		padding-left: 0px;
+	}
+	.servcover{
+		text-align: center;
+		padding: 20px;
+		img{
+			margin-bottom: 15px;
+		}
+		h4{
+			margin-bottom: 15px;
+		}
+	}
+	.vhfinh{
+		background-image: url('../../assets/images/services.jpg');
+	}
+}
+
+
+.our-team{
+	@include big-padding();
+	.team-row{
+		.single-usr{
+			background-color: #FFF;
+			@include shado-3();
+			border-radius: 15px;
+			@media screen and (max-width: 767px) {
+				margin-bottom: 30px;
+			}
+			img{
+
+			}
+			.det-o{
+				text-align: center;
+				padding: 10px;
+				h4{
+					font-size: 1.2rem;
+					margin-bottom: 5px;
+				}
+				i{
+
+				}
+			}
+		}
+	}
+}
+
+/* ===================================== Testimonial CSS ================================== */
+
+.testimonial-container{
+	background-color: #FFF;
+}
+.testimonial{
+	text-align: center;
+	padding: 15px;
+	.pic{
+		img{
+			max-width: 90px;
+			border-radius: 50%;
+			background-color: #FFF;
+			padding: 2px;
+			@include shado-1();
+			margin-bottom: 10px;
+		}
+	}
+	.description{
+
+	}
+	.title{
+		font-size: 1.5rem;
+		margin-top: 3px;
+		margin-top: 10px;
+	}
+	.post{
+
+	}
+}
+/* ===================================== Blog CSS ================================== */
+
+.blog{
+    @include big-padding();
+    background-color: #fff;
+    .blog-row{
+        margin-top: 20px;
+        .blogcol{
+            margin-bottom: 30px;
+            img{
+                margin-bottom: 10px;
+            }
+            span{
+                font-size: .8rem;
+            }
+            h4{
+                margin-top: 10px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ===================================== Fooer CSS ================================== */
+
+.footer {
+  padding: 50px;
+  background-color: #1d3750;
+  color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .footer {
+      padding: 50px 10px; } }
+  .footer h2 {
+    font-size: 22px;
+      margin-top: 20px;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: 600;
+}
+  .footer p {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: .9rem; }
+  .footer .link-list li {
+    padding: 7px;
+    font-weight: 500;
+    font-size: .95rem;
+    border-bottom: 1px solid #7586985c; }
+    .footer .link-list li a {
+      color: #FFF; }
+    .footer .link-list li i {
+      float: right; }
+  .footer .map-img {
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px; }
+address{
+    font-size: .95rem;
+    a{
+        color: #fff;
+    }
+}
+.copy {
+  padding: 20px;
+  background-color: #1f3346;
+  font-size: .85rem;
+  color: #FFF; }
+  .copy a {
+    color: #FFF; }
+  .copy span {
+    float: right; }
+    .copy span i {
+      margin-right: 20px; }
+    @media screen and (max-width: 777px) {
+      .copy span {
+        display: none; } }
+
+
+
